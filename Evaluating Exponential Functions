@@ -1,0 +1,53 @@
+print("___________            .__                __                                                           __  .__        .__      _____                    __  .__                      ")
+print("\_   _____/__  _______ |  |  __ _______ _/  |_ ____     _______  _________   ____   ____   ____   ____/  |_|__|____   |  |   _/ ____\_ __  ____   _____/  |_|__| ____   ____   ______")
+print("|    __)_\  \/ /\__  \ |  | |  |  \__  \\   __\/ __ \  _/ __ \\  \/  /\____ \ /  _ \ /    \_/ __ \ /    \   __\  \__  \ |  |   \   __\  |  \/    \_/ ___\   __\  |/  _ \ /    \ /  ___/")
+print("|         \\   /  / __ \|  |_|  |  // __ \|  | \  ___/  \  ___/ >< | |_>  >    <_> )   |  \  ___/|   |  \  | |  |/ __ \|  |__  |  | |  |  /   |  \  \___|  | |  (  <_> )   |  \\___ \ ")
+print("/_______  /\_/  (____  /____/____/(____  /__|  \___  >  \___>__/\_ \|    __/\____/|___|  /\___  >___|  /__| |__(____  /____/  |__| |____/|___|  /\___  >__| |__|\____/|___|  /____  >")
+print("        \/            \/               \/          \/       \/    \/|__|               \/     \/     \/             \/                        \/     \/                    \/   \/  ")
+print("By Vincent Lin\n")
+
+print("Enter Exponential_Function() to begin")
+
+
+def Exponential_Function():
+
+    print("do you want to learn about the warning of this calculator?")
+       
+
+    def Exponential_Function_Calculator():
+
+            y = int(input("Enter Value for y\n"))
+            b = int(input("Enter Value for b\n"))
+            x = int(input("Enter Value for x\n"))
+            z = int(input("Enter Value for z\n"))
+
+
+            Y = b ** x
+            X = Y * y
+            answer = X + z
+            if(answer < 1):
+                answer2 = format( answer, ".3f" )
+                answer3 = (answer2 * 1000) 
+                print( answer3 + "/1000" )
+            else:
+                print(answer + "is the answer")
+
+    def Exponential_Function_Warning():
+
+            print("The Formula for Exponential Functions is... a(x)=y*b^x+z")
+            print("if y doesnt exist substitute it with 1")
+            print("if z doesnt exist substitue it with 0")
+            print("if this is the correct formula enter Exponential_Function_Calculator() to continue")
+            prompt2 = raw_input("Continue?\n")
+            if prompt2 == "Exponential_Function_Calculator()":
+                Exponential_Function_Calculator()
+            else:
+                Exponential_Function()
+            
+
+    prompt1 = raw_input('yes or no\n')
+    if prompt1 == 'yes':
+            Exponential_Function_Warning()
+    if prompt1 == 'no':
+        Exponential_Function_Calculator()
+    
